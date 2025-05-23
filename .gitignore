@@ -1,0 +1,60 @@
+# SANDBOX ENVIRONMENT - Simplified .gitignore
+
+# Environment files
+.env
+.env.*
+
+# WordPress uploads (symlinked to /data)
+web/app/uploads
+
+# Configuration symlinks
+web/wp-config.php
+web/wp-cli.yml
+
+# Logs
+*.log
+error_log
+access_log
+web/app/debug.log
+
+# Database dumps
+*.sql
+*.sql.gz
+*.mysql
+*.dump
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+tmp/
+
+# Backup files
+*.bak
+*.backup
+backup*/
+
+# Security files
+*.pem
+*.key
+
+# Node modules (if any)
+node_modules/
+
+# NOTE: For sandbox, we INCLUDE vendor/ and wp/ directories
+# This makes the sandbox fully self-contained
+
+# Keep the reset script always visible
+!reset-sandbox-clone-from-dev.sh

@@ -1,0 +1,51 @@
+
+
+body .acf-field .acf-label label {
+  font-weight: 500;
+  margin: 0 0 3px;
+  padding: 0;
+}
+
+body .acf-block-component {
+  box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+body .wp-block.is-selected .acf-block-component {
+  box-shadow: none;
+}
+body ul.acf-radio-list li span, body ul.acf-checkbox-list li span {
+  font-family: "Open sans";
+  font-weight: 400;
+}
+body .acf-fields > .acf-tab-wrap .acf-tab-group li a {
+  font-family: "Open sans";
+  padding: 8px 25px;
+}
+body .acf-field.acf-field-image-aspect-ratio-crop .acf-image-uploader-aspect-ratio-crop .image-wrap img {
+  height: 400px !important;
+}
+
+.edit-post-layout__metaboxes {
+  padding: 20px;
+}
+.edit-post-layout__metaboxes .postbox-header {
+  margin-top: 40px;
+  background: #cc3333;
+  color: white;
+}
+.edit-post-layout__metaboxes .postbox-header .hndle.ui-sortable-handle {
+  font-weight: bold;
+  color: white;
+}
+
+body #editor .postbox > .postbox-header:hover {
+  background: #7D7B7B;
+}
+
+body #normal-sortables {
+  padding: 20px;
+}
+
+
+.acf-block-body .acf-block-fields {
+  border-width: 2px;
+}

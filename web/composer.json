@@ -1,0 +1,51 @@
+{
+  "name": "xwander/nordic",
+  "description": "WordPress with Composer",
+  "type": "project",
+  "license": "proprietary",
+  "minimum-stability": "stable",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "composer/installers": "^2",
+    "johnpbloch/wordpress": "^6",
+    "wp-cli/wp-cli-bundle": "^2",
+    "wpackagist-plugin/acf-image-aspect-ratio-crop": "^6",
+    "wpackagist-plugin/cookie-law-info": "^3",
+    "wpackagist-plugin/crop-thumbnails": "^1",
+    "wpackagist-plugin/instagram-feed": "^6",
+    "wpackagist-plugin/leadin": "^11",
+    "wpackagist-plugin/regenerate-thumbnails-advanced": "^2",
+    "wpackagist-plugin/resize-image-after-upload": "^1",
+    "wpackagist-plugin/responsive-slider-gallery": "^1",
+    "wpackagist-plugin/shortpixel-adaptive-images": "^3",
+    "wpackagist-plugin/simple-custom-post-order": "^2"
+  },
+  "config": {
+    "allow-plugins": {
+      "johnpbloch/wordpress-core-installer": true,
+      "composer/installers": true
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "app/plugins/{$name}/": ["type:wordpress-plugin"]
+    },
+    "preserve-paths": [
+      "app/plugins/advanced-custom-fields-pro",
+      "app/plugins/sitepress-multilingual-cms",
+      "app/plugins/acfml",
+      "app/plugins/otgs-installer-plugin",
+      "app/plugins/leadin",
+      "app/plugins/autoupdater"
+    ]
+  }
+}

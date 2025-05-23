@@ -1,0 +1,20 @@
+{
+    "name": "xwander",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "sass --no-source-map sass/style.scss style.css && sass --no-source-map sass/style-main-new.scss style-main-new.css",
+        "minify:css": "postcss style.css -o style.min.css && postcss style-main-new.css -o style-main-new.min.css",
+        "build:css": "npm run compile:sass && npm run minify:css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "cssnano": "^6.1.1",
+        "postcss-cli": "^11.0.0",
+        "postcss-strip-inline-comments": "^0.1.5",
+        "sass": "^1.72.0"
+    }
+}
