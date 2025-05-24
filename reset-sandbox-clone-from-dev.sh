@@ -1,6 +1,10 @@
 #!/bin/bash
 # reset-sandbox-clone-from-dev.sh
 # Complete sandbox environment reset from dev.xwander.fi
+#
+# Documentation: /srv/xwander-platform/sandbox.xwander.fi/project-docs/reset-script-documentation.md
+# This script resets the entire sandbox to match current dev environment.
+# See documentation for detailed explanation of each step.
 
 set -euo pipefail
 
